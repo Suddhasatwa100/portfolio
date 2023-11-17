@@ -1,0 +1,311 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:linear-gradient(to top,rgb(255, 241, 232),rgb(255, 255, 255));
+    padding: 20px 11%;
+    border-bottom: 1px solid navy;
+    transition: all ease 0.50s;
+}
+.logo img{
+    width: 60%;
+    height: auto;
+}
+.navlist{
+    display: flex;
+    list-style: none;
+}
+.navlist a{
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0 40px;
+    transition: all ease 0.40s;
+    text-decoration: none;
+    color: black;
+}
+.navlist a:hover{
+    border-bottom: 5px solid navy;
+    transition: all ease 0.20s;
+}
+#menu-icon{
+   font-size: 42px;
+   cursor: pointer;
+   display: none;
+}
+section
+{
+    padding: 120px 19% 100px;
+    border: 1px solid navy;
+}
+.home{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.home-text{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    word-spacing: 5px;
+}
+.home-text h1{
+    font-weight: 800;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.home-text h4{
+    font-weight: 600;
+    font-size: 30px;
+    color: rgb(3, 3, 91);
+}
+#btn{
+    color: azure;
+    background-color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 45px;
+    margin-top: 2.5rem;
+    border: 3px solid black;
+    transition: all ease .50s;
+}
+#btn:hover{
+        color: black;
+        background: transparent;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    align-items: center;
+    gap:4rem;
+}
+.container img{
+    width: 100%;
+    height: auto;
+}
+.about-me h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.about-me h5{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about-me a{
+    font-weight: 600;
+}
+.s-text{
+    text-align: center;
+    font-size: 25px;
+}
+.skill-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    align-items: center;
+    gap: 2.2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+.skill-box{
+    padding: 55px 30px;
+    background-color:white;
+    border: 3px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease 0.50s;
+}
+.skill-box:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+}
+.skill-box i{
+    font-size: 20px;
+    color: black;
+
+}
+.contact-text{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 2.5rem;
+}
+.contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    align-items: center;
+    gap: 4.2rem;
+}
+.left-side{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+}
+.contact i{
+    font-size: 80px;
+}
+.contact i:hover{
+    color: black;
+    transition: all ease 0.40s;
+}
+.contact h2{
+    font-size: 30px;
+}
+.contact p{
+    font-size: 20px;
+}
+footer
+{
+    padding: 80px 100px 11%;
+    background-color: rgba(0, 0, 0, 0.854);
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    align-items: center;
+    gap: 2.2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+.footer a{
+    color: azure;
+}
+.social h1
+{
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+.social a{
+    font-size: 25px;
+    margin: 5px;
+}
+.mssg h3{
+     color: aliceblue;
+     font-size: 20px;
+     margin-bottom: 10px;
+}
+.mssg input{
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid white;
+    outline: none;
+}
+input::placeholder{
+    color: aliceblue;
+}
+textarea{
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid white;
+    outline: none;
+}
+button{
+    width: 30%;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+@media (max-width:1600px) 
+{
+   header{
+    padding: 14px 4%;
+   }    
+   section{
+    padding: 100px 5% 80px;
+   }
+}
+@media (max-width:1200px){
+    .home{
+        min-height: 90vh;
+    }
+    .navlist a{
+        margin: 0 20px;
+    }
+} 
+@media (max-width:1060px){
+    .about{
+        grid-template-columns: 1fr;
+    }
+    .container{
+        text-align: center;
+        order: 2;
+    }
+    .container img{
+        max-width: 100%;
+        width: 600px;
+        height: auto;
+    }
+    .skill-items{
+        grid-template-columns: repeat(auto-fit,minmax(350px,auto));   
+    }
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    .left-side{
+        margin: auto;
+    }
+} 
+@media (max-width:870px)
+{
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: -800px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background:black;
+        padding: 20px 0;
+        text-align: left;
+        transition: all ease .50s;
+    }
+    .navlist a{
+        display: block;
+        font-size: 22px;
+        color: azure;
+        padding: 12px 0;
+        gap: 2rem;
+    }
+    .navlist.open{
+        top: 100%;
+    }
+}
+@media (max-width:660px){
+    .home{
+        min-height: 80vh;
+    }
+    .btn{
+        padding: 10px 35px;
+    }
+    .left-side{
+        gap: 3rem;
+    }
+    .contact i{
+        font-size: 30px;
+    }
+}
