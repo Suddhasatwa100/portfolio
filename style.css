@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+
 }
 header{
     position: fixed;
@@ -13,7 +14,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background:linear-gradient(to top,rgb(255, 241, 232),rgb(255, 255, 255));
+    background-color: azure;
     padding: 20px 11%;
     border-bottom: 1px solid navy;
     transition: all ease 0.50s;
@@ -47,6 +48,7 @@ section
 {
     padding: 120px 19% 100px;
     border: 1px solid navy;
+    width: 100%;
 }
 .home{
     position: relative;
@@ -63,8 +65,9 @@ section
 .home-text{
     font-size: 22px;
     font-weight: 600;
-    margin-bottom: 15px;
-    word-spacing: 5px;
+    word-spacing: 5px;   
+    border-left: 6px solid black;
+    padding-left: 10px;
 }
 .home-text h1{
     font-weight: 800;
@@ -199,6 +202,10 @@ footer
     font-size: 25px;
     margin: 5px;
 }
+.social i:hover{
+    transition: all ease 0.30s;
+    transform: translateY(-3px);
+}
 .mssg h3{
      color: aliceblue;
      font-size: 20px;
@@ -294,6 +301,12 @@ button{
     .navlist.open{
         top: 100%;
     }
+    .home-text h1{
+        font-weight: 800;
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
 }
 @media (max-width:660px){
     .home{
@@ -308,4 +321,11 @@ button{
     .contact i{
         font-size: 30px;
     }
+    section{
+        padding: 100px 5% 80px;
+        padding-right: 25%;
+       }
+       footer{
+        padding-right: 30%;
+       }
 }
